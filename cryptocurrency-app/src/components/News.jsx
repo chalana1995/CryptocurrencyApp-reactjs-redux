@@ -16,8 +16,6 @@ function News({ simplified }) {
   });
   const { data } = useGetCryptosQuery(100);
 
-  console.log("cryptoNews", cryptoNews);
-
   if (!cryptoNews?.value) return "Loading...";
 
   const demoImage =
